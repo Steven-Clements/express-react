@@ -1,0 +1,47 @@
+.container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  margin: 1.5rem auto 1rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 1rem 1.25rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.btn-primary {
+  background-color: cornflowerblue;
+  border: 2px cornflowerblue solid;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: cornflowerblue;
+  transition-duration: 0.4s;
+}
+
+#spinner {
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
