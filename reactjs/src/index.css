@@ -1,4 +1,11 @@
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
 .container {
+  font-family: 'Arial';
   margin: 3rem;
   display: flex;
   flex-direction: column;
@@ -9,6 +16,29 @@
 
 .container h1 {
   margin: 1.5rem auto 1rem;
+}
+
+.container h3 {
+  margin: 0.5rem;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+.dependencies {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dependencies li {
+  border: 2px solid cornflowerblue;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 .btn {
@@ -37,6 +67,7 @@
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  color: cornflowerblue;
 }
 
 @keyframes rotation {
